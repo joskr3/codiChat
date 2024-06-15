@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js" type="module"></script>
+  <title>codiChat Local</title>
+</head>
+
+<body>
+  <header>
+    <h1>CodiChat - Local</h1>
+  </header>
+  <main>
+    <section>
+      <ul>
+        <!--   Aca se agregan los mensajes  -->
+      </ul>
+    </section>
+    <br>
+    <small>
+      <!--   Aca mostramos el proceso de carga del modelo de IA  -->
+    </small>
+    <template id="chat-template">
+      <li class="message">
+        <span>
+          <!--   Aca mostramos quien envia el mensaje  -->
+        </span>
+        <p>
+          <!--   Aca mostramos el mensaje  -->
+        </p>
+      </li>
+    </template>
+  </main>
+  <form id="chat-form">
+    <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+
+</html>

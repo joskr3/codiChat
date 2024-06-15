@@ -1,0 +1,156 @@
+/* INCIO RESETEO DE ESTILOS  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+img,
+video,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion:reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+
+/* FIN RESETEO DE ESTILOS  */
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  place-content: center;
+  height: 100dvh;
+}
+
+header {
+  background: teal;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  max-width: 100%;
+  height: 70vh;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+.message {
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+
+  >span {
+    font-weight: bold;
+  }
+}
+
+.message.bot {
+  background-color: aquamarine;
+  color: white;
+}
+
+.message.user {
+  background-color: salmon;
+  color: white;
+  text-align: right;
+}
+
+#chat-form {
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1rem;
+  justify-items: flex-end;
+
+  >button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}
+
+#chat-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+small {
+  text-align: center;
+  margin-top: 1rem;
+  color: #bbbbbb;
+}
